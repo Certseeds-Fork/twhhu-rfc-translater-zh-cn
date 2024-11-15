@@ -21,14 +21,20 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 1
 
+      - name: setup sitemap.xml
+        run: |
+          python3 ./src/sitemap.py
+
       - name: cp src to dst
         run: |
           mkdir -p ./dst
-          mkdir -p ./dst/figs
+          mkdir -p ./dst/figs/html
           mkdir -p ./dst/html
           mkdir -p ./dst/public
-          cp -r ./figs/* ./dst/figs/
+          cp -r ./figs/html/* ./dst/figs/html/
           cp -r ./html/* ./dst/html/
+          mv ./public/robots.txt ./dst/robots.txt
+          mv ./public/sitemap.xml ./dst/sitemap.xml
           mv ./public/index.html ./dst/index.html
           cp -r ./public/* ./dst/public/
 

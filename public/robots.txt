@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Disallow: /
+
+Crawl-delay: 86400
+Request-rate: 10/86400
+Sitemap: https://certseeds.github.io/twhhu-rfc-translater-zh-cn/sitemap.xml

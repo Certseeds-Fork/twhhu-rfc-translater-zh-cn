@@ -31,6 +31,7 @@ def get_url_element(path: str) -> str:
 
 def main() -> None:
     xml: str = get_head()
+    xml += get_url_element("index.html")
     for dir in dirs:
         files: List[str] = get_html_relative_path(dir)
         for file in files:

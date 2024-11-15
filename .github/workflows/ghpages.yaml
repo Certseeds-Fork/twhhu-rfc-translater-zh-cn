@@ -29,6 +29,7 @@ jobs:
           mkdir -p ./dst/public
           cp -r ./figs/* ./dst/figs/
           cp -r ./html/* ./dst/html/
+          mv ./public/index.html ./dst/index.html
           cp -r ./public/* ./dst/public/
 
       - name: Upload artifact

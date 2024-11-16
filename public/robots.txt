@@ -6,5 +6,5 @@ Allow: /
 User-agent: *
 Disallow: /
 
-crawl-delay: 60
+crawl-delay: 1
 Sitemap: https://certseeds.github.io/twhhu-rfc-translater-zh-cn/sitemap.xml

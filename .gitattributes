@@ -1,2 +1,9 @@
-*.html    text eol=lf
-*.json    text eol=lf
+* text=auto
+
+*.py      text eol=lf linguist-vendored
+*.js    text eol=lf linguist-documentation
+*.css    text eol=lf linguist-documentation
+*.html    text eol=lf linguist-documentation
+*.json    text eol=lf linguist-documentation
+
+*.cmd     text eol=crlf linguist-vendored

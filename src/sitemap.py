@@ -7,7 +7,7 @@ import os
 
 dirs: List[str] = ["figs/html", "html"]
 
-URL = "https://certseeds.github.io/twhhu-rfc-translater-zh-cn/"
+URL = "https://certseeds-fork.github.io/twhhu-rfc-translater-zh-cn/"
 
 
 def get_html_relative_path(path: str) -> List[str]:
